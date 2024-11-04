@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Consulta de Hospitais</title>
+    <style>
+        /* Estilo para adicionar o espaçamento entre o botão e o resultado */
+        #buscarHospitais {
+            margin-bottom: 20px; /* ajuste o valor conforme necessário */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selecione sua Localização</h1>
+
+        <label for="estado">Estado:</label>
+        <select id="estado">
+            <option value="">Selecione um estado</option>
+            <!-- Os estados serão preenchidos via JavaScript -->
+        </select>
+
+        <label for="municipio">Município:</label>
+        <select id="municipio" disabled>
+            <option value="">Selecione um município</option>
+        </select>
+
+        <button id="buscarHospitais" class="button" disabled>Buscar Hospitais</button>
+
+        <div id="loading" class="loading"></div>
+        
+        <div id="resultado"></div>
+    </div>
+
+    <script src="dados_hospitais.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

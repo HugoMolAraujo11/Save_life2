@@ -1,0 +1,117 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: contain; /* Ajusta a imagem para caber na tela */
+    background-color: #007bc8; /* Cor de fundo complementar */
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: center; /* Centraliza o logo */
+    margin: -40px 0; /* Diminui a margem em cima */
+}
+
+/* Estilos do Container */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Leve transparência para destacar o conteúdo */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #0761e7;
+    margin-bottom: 20px;
+}
+
+/* Estilos de Formulário */
+label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    margin: 15px 0 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: none; /* Impede o redimensionamento */
+}
+
+/* Estilos de Foco */
+input:focus, select:focus, textarea:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+/* Botão de Ação */
+button {
+    background-color: #007bc8; /* Cor do fundo do botão igual ao fundo */
+    color: white; /* Mantenha o texto em branco ou ajuste conforme necessário */
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f8b; /* Cor do fundo ao passar o mouse, um tom mais escuro */
+}
+
+/* Estilos da Caixa de Hospitais */
+.hospital-caixa {
+    border: 2px solid #007bc8; /* Borda azul, mesma cor do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaço acima */
+    background-color: #f9f9f9; /* Fundo claro */
+}
+
+.hospital-caixa h2 {
+    margin: 0 0 10px 0; /* Margem para o título */
+}
+
+#hospital-lista {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove preenchimento da lista */
+}
+
+#hospital-lista li {
+    margin: 5px 0; /* Margem entre os itens */
+}
+
+#hospital-lista a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #007bc8; /* Cor do texto dos links, igual à cor do botão */
+}
+
+#hospital-lista a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
